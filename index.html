@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hospedaje Buenos Aires | Cangallo</title>
+  <meta name="description" content="Hospedaje Buenos Aires en Cangallo: habitaciones cómodas, Wi‑Fi, agua caliente y cochera. Reserva por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#/" class="logo">🏨 Hospedaje Buenos Aires</a>
+      <ul class="nav-links">
+        <li><a href="#/habitaciones">Habitaciones</a></li>
+        <li><a href="#/servicios">Servicios</a></li>
+        <li><a href="#/galeria">Galería</a></li>
+        <li><a href="#/ubicacion">Ubicación</a></li>
+        <li><a href="#/contacto">Contacto</a></li>
+      </ul>
+      <a class="nav-cta" target="_blank" rel="noopener"
+        href="https://wa.me/51925771480?text=Hola%2C%20quisiera%20informaci%C3%B3n%20y%20disponibilidad">
+        WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <main id="app" class="view"></main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span id="year"></span> Hospedaje Buenos Aires — Cangallo</div>
+      <div>Av. Argentina 427, Cangallo 05401 — Perú</div>
+    </div>
+  </footer>
+
+  <div class="wafloat">
+    <a href="https://wa.me/51925771480?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
+  </div>
+
+  <!-- Datos embebidos para que funcione sin servidor -->
+  <script id="APP_DATA" type="application/json">
+  {
+    "rooms": [
+      {
+        "name": "Simple",
+        "price": 60,
+        "images": ["hab-simple.jpg", "hab-simple.jpg", "hab-simple.jpg"],
+        "features": ["1 cama 1½ plaza", "Baño privado", "Agua caliente 24/7", "Wi‑Fi", "TV por cable", "Acceso a cochera"]
+      },
+      {
+        "name": "Matrimonial",
+        "price": 80,
+        "images": ["hab-matrimonial.jpg", "hab-matrimonial.jpg"],
+        "features": ["Cama doble", "Baño privado", "Agua caliente 24/7", "Wi‑Fi", "TV por cable", "Acceso a cochera"]
+      },
+      {
+        "name": "Doble / Familiar",
+        "price": 100,
+        "images": ["hab-doble.jpg", "hab-doble.jpg"],
+        "features": ["2 camas", "Baño privado", "Agua caliente 24/7", "Wi‑Fi", "TV por cable", "Acceso a cochera"]
+      }
+    ],
+    "services": [
+      {"icon":"🧼","title":"Limpieza diaria","desc":"Ambientes higienizados con productos de calidad."},
+      {"icon":"📶","title":"Wi‑Fi rápido","desc":"Conexión estable en todo el hospedaje."},
+      {"icon":"🚿","title":"Agua caliente 24/7","desc":"Ducha caliente todo el día."},
+      {"icon":"🔒","title":"Seguridad","desc":"Ingreso controlado y cámaras."},
+      {"icon":"🧴","title":"Amenities","desc":"Toallas, jabón y artículos de aseo."},
+      {"icon":"🚗","title":"Cochera","desc":"Disponible para autos y motos (coordinar)."}
+    ]
+  }
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
